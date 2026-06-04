@@ -167,7 +167,8 @@ export function WebTerminal({
 
       // ── WebSocket connection ──────────────────────────────────────────
       const savedSession = sessionStorage.getItem(sessionStorageKey);
-      const connectUrl = savedSession
+      const urlHasSessionId = /[?&]session_id=/.test(wsUrl);
+      const connectUrl = savedSession && !urlHasSessionId
         ? `${wsUrl}${wsUrl.includes("?") ? "&" : "?"}session_id=${encodeURIComponent(savedSession)}`
         : wsUrl;
 
