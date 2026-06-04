@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "description": "Tokimo WebTerminal — xterm.js v6 React component with WebSocket PTY, session persistence, themes, and clipboard support.",
-  "keywords": ["react", "terminal", "xterm", "websocket", "tokimo"],
+  "keywords": [
+    "react",
+    "terminal",
+    "xterm",
+    "websocket",
+    "tokimo"
+  ],
   "license": "MIT",
   "author": "Tokimo Lab",
   "repository": {
@@ -19,7 +25,9 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepare": "pnpm build",
     "build": "vite build && tsc --emitDeclarationOnly --outDir dist",

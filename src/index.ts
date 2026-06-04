@@ -1,10 +1,10 @@
-export { WebTerminal } from "./WebTerminal.js";
-export type { WebTerminalProps, WebTerminalI18nKey } from "./WebTerminal.js";
-export { TERMINAL_THEMES, getTerminalTheme } from "./themes.js";
-export type { TerminalTheme, TerminalThemeId } from "./themes.js";
+export type { TerminalClipboardOptions } from "./clipboard.js";
 export {
   copyToClipboard,
-  pasteFromClipboard,
   installTerminalClipboard,
+  pasteFromClipboard,
 } from "./clipboard.js";
-export type { TerminalClipboardOptions } from "./clipboard.js";
+export type { TerminalTheme, TerminalThemeId } from "./themes.js";
+export { getTerminalTheme, TERMINAL_THEMES } from "./themes.js";
+export type { WebTerminalI18nKey, WebTerminalProps } from "./WebTerminal.js";
+export { WebTerminal } from "./WebTerminal.js";
