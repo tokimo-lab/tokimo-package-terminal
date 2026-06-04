@@ -1,0 +1,50 @@
+{
+  "name": "@tokimo/terminal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tokimo WebTerminal — xterm.js v6 React component with WebSocket PTY, session persistence, themes, and clipboard support.",
+  "keywords": ["react", "terminal", "xterm", "websocket", "tokimo"],
+  "license": "MIT",
+  "author": "Tokimo Lab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokimo-lab/tokimo-package-terminal.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "prepare": "pnpm build",
+    "build": "vite build && tsc --emitDeclarationOnly --outDir dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/addon-search": "^0.16.0",
+    "@xterm/addon-web-links": "^0.12.0",
+    "@xterm/xterm": "^6.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/addon-search": "^0.16.0",
+    "@xterm/addon-web-links": "^0.12.0",
+    "@xterm/xterm": "^6.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.0.0"
+  }
+}
